@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player with Header, Title, Text, and Button</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #141414;
+            color: #fff;
+            overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #111;
+            position: fixed;
+            width: 100%;
+            top: 0; /* Mova o cabeçalho para o topo da tela */
+            z-index: 1000;
+        }
+
+        #logo {
+            width: 140px; /* Ajuste o tamanho da logo conforme necessário */
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        .video-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; /* Ajuste a altura conforme necessário */
+            margin-bottom: 20px; /* Espaçamento vertical entre as seções */
+        }
+
+        .video-container {
+            position: relative;
+            text-align: center;
+            margin: 0 10px; /* Espaçamento entre os vídeos */
+        }
+
+        .video-container video {
+            width: 100%; /* Ajuste a largura conforme necessário */
+            max-width: 100%;
+            height: auto;
+            display: block; /* Resolve um problema de espaçamento extra na parte inferior do vídeo */
+        }
+
+        .video-text {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .video-button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #e50914; /* Cor vermelha da Netflix */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <img id="logo" src="PORNO-removebg-preview.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Premio</li>
+            <li>Conteudo Adutos</li>
+            <li>Minha Lista</li>
+        </ul>
+    </nav>
+</header>
+
+<div class="video-column" style="margin-top: 50px;">
+    <div class="video-container">
+        <video controls>
+            <source src="GOL de Vinicius JR real Madrid vs Sevilla(480P).mp4" type="video/mp4">
+        </video>
+        <div class="video-text">Título do Vídeo 1</div>
+        <button class="video-button" onclick="clicouNoBotao()">Clique aqui</button>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+        <div class="video-text">Título do Vídeo 2</div>
+        <button class="video-button" onclick="clicouNoBotao()">Clique aqui</button>
+    </div>
+   
+    <div class="video-container">
+        <video controls>
+            <source src="video4.mp4" type="video/mp4">
+        </video>
+        <div class="video-text">Título do Vídeo 4</div>
+        <button class="video-button" onclick="clicouNoBotao()">Clique aqui</button>
+    </div>
+   
+    <div class="video-container">
+        <video controls>
+            <source src="video4.mp4" type="video/mp4">
+        </video>
+        <div class="video-text">Título do Vídeo 4</div>
+        <button class="video-button" onclick="clicouNoBotao()">Clique aqui</button>
+    </div>
+    
+    <!-- Adicione mais 3 vídeos com a mesma estrutura -->
+</div>
+
+<div class="video-column">
+    <div class="video-container">
+        <video controls>
+            <source src="video3.mp4" type="video/mp4">
+        </video>
+        <div class="video-text">Título do Vídeo 3</div>
+        <button class="video-button" onclick="clicouNoBotao()">Clique aqui</button>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="video4.mp4" type="video/mp4">
+        </video>
+        <div class="video-text">Título do Vídeo 4</div>
+        <button class="video-button" onclick="clicouNoBotao()">Clique aqui</button>
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="video4.mp4" type="video/mp4">
+        </video>
+        <div class="video-text">Título do Vídeo 4</div>
+        <button class="video-button" onclick="clicouNoBotao()">Clique aqui</button>
+    </div>
+ 
+    <div class="video-container">
+        <video controls>
+            <source src="video4.mp4" type="video/mp4">
+        </video>
+        <div class="video-text">Título do Vídeo 4</div>
+        <button class="video-button" onclick="clicouNoBotao()">Clique aqui</button>
+    </div>
+    <!-- Adicione mais 3 vídeos com a mesma estrutura -->
+</div>
+
+<script>
+    function clicouNoBotao() {
+        alert("Você clicou no botão!");
+    }
+</script>
+</body>
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="{{ settings.accent_color }}">
+
+    <!-- Seu código JavaScript para notificação de venda simulada -->
+    <script>
+        // Função para exibir a notificação de venda
+        function showSaleNotification(customerName) {
+            var saleNotification = document.createElement('div');
+            saleNotification.classList.add('sale-notification');
+            
+            var img = document.createElement('img');
+            img.src = "https://cdn.shopify.com/s/files/1/0642/0257/1948/files/Design_sem_nome_6dbebe22-a785-4cb5-b319-debeee55f299.png?v=1706293142";
+            img.style.width = "50px";
+            img.style.height = "auto";
+            img.style.marginRight = "0px";
+
+            var nameDiv = document.createElement('div');
+            nameDiv.textContent = customerName + ' comprou agora';
+            nameDiv.style.marginRight = "5px";
+           nameDiv.style.marginTop = "7px"; // Adiciona margem superior
+
+          var pixText = document.createElement('h2');
+pixText.classList.add('sale-notification-pix');
+pixText.textContent = 'compra feita via pix';
+pixText.style.color = '#595959'; // Altera a cor do texto para #595959
+pixText.style.margin = "-10"; // Remove qualquer margem
+pixText.style.marginRight = "5px"; // Margem à direita para separar da imagem
+pixText.style.marginLeft = "-155px"; // Move para o lado esquerdo
+pixText.style.marginTop = "7px"; // Adiciona margem superior
+
+            nameDiv.prepend(img); // Adiciona a imagem antes do texto
+            saleNotification.appendChild(nameDiv);
+            saleNotification.appendChild(pixText);
+
+            document.body.appendChild(saleNotification);
+
+            setTimeout(function() {
+                saleNotification.style.opacity = '0';
+                setTimeout(function() {
+                    document.body.removeChild(saleNotification);
+                }, 1000); // Tempo de duração da animação de fadeout
+            }, 5000); // Tempo de exibição da notificação
+        }
+
+        // Função para simular notificações de venda em intervalos regulares
+        function simulateSaleNotifications() {
+            var customerNames = ['Maria', 'Pedro', 'Lucas', 'Marcelo', 'Andre', 'Carlos', 'João', 'Pablo', 'Ana', 'bernado'                                          ]; // Lista de nomes para simulação
+
+            setInterval(function() {
+                var randomIndex = Math.floor(Math.random() * customerNames.length);
+                var randomCustomerName = customerNames[randomIndex];
+                showSaleNotification(randomCustomerName);
+            }, 10000); // Intervalo de simulação em milissegundos (10 segundos)
+        }
+
+        // Inicia a simulação de notificações de venda ao carregar a página
+        document.addEventListener('DOMContentLoaded', function() {
+            simulateSaleNotifications();
+        });
+    </script>
+    <!-- Fim do seu código JavaScript -->
+
+    <!-- Estilo CSS para posicionar a notificação flutuante -->
+  <style>
+    .sale-notification {
+        position: fixed;
+        bottom: 20px; /* Distância do rodapé da janela */
+        left: 5%; /* Centraliza horizontalmente */
+        transform: translateX(0%); /* Centraliza horizontalmente */
+        background-color: #fff; /* Cor de fundo da notificação */
+        padding: 5px 20px; /* Espaçamento interno da notificação */
+        border: none; /* Remove a borda da notificação */
+        border-radius: 5px; /* Arredondamento dos cantos da notificação */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra da notificação */
+        z-index: 9999; /* Z-index para garantir que a notificação esteja sempre acima de outros elementos */
+        display: flex; /* Para alinhar a imagem e o texto na mesma linha */
+        align-items: center; /* Para alinhar verticalmente a imagem e o texto */
+    }
+
+    .sale-notification img {
+        width: 50px; /* Largura da imagem */
+        height: auto; /* Altura da imagem é ajustada automaticamente para manter a proporção */
+        margin-right: 10px; /* Espaçamento à direita da imagem */
+    }
+
+    .sale-notification div {
+        margin-right: 10px; /* Remove o espaço entre a imagem e o texto */
+    }
+
+    .sale-notification h2 {
+        margin: 0; /* Remove qualquer margem */
+        margin-right: 0px; /* Remove o espaço à direita */
+        margin-left: auto; /* Move para o lado esquerdo */
+    }
+</style>
+
+    <!-- Fim do estilo CSS -->
+
+    <!-- Restante do conteúdo da tag head... -->
+</head>
+<body>
+    <!-- Conteúdo do corpo da página... -->
+</body>
+</html>
+
+</html>
